@@ -118,3 +118,15 @@ Usado para comentar no meio do código sem interferir no código.
 ```bash
 **<p>Usamos <abbr title="Hypertext Markup Language">HTML</abbr>  para estruturar nossos documentos da web.</p>**
 ```
+
+### DETALHES DE CONTATO
+
+A tag usada para apenas colocar detalhes de contato é a tag _<address></address>_, não endereço em si, mas por exemplo o autor da página.
+
+```bash
+<address>
+    <p>Mayk Brito <br>
+    <strong>Campo Grande, MS</strong>
+    </p>
+</address
+```
