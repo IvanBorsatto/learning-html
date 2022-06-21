@@ -182,3 +182,17 @@ São os famosos _hyperlinks_, e a tag usada para se criar um é a **_<a href=" >
 Há também o atributo de _download_, que é **_download=""_**, usado junto do _href=""_,por exemplo, se você colocar o link de uma imagem no _href=""_ com o atributo de download, a imagem será baixada ao invés de irmos até a página e se colocarmos um valor no atributo de download, ele irá dizer como você vai salvar o arquivo.
 
 Por fim temos o atributo **_target=""_**, que irá dizer qual o alvo do nosso disparo, ou seja, se não tivermos o _target_, quando clicarmos no link, ele vai pegar o mesmo alvo, a mesma página e apenas vai trocar o conteúdo, mas se usarmos o atributo, por exemplo **_target="\_blank"_**, ele vai abrir uma página com o conteúdo.
+
+### DIRETÓRIOS
+
+- Para sair de um diretório colocamos **_../_** ,ele sairá do diretório, semelhante a sair de uma caixa que está dentro de outro.
+
+```bash
+<a href="hyperlinks.html">arquivo na pasta anterior</a>
+<br>
+<a href="./urls-caminhos.html">arquivo no diretório raiz</a>
+<br>
+<a href="urls-caminhos.html">arquivo na mesma pasta</a>
+<br>
+<a href="outros/conteudo-a-element.html">arquivo na pasta outros, que está na pasta anterior</a>
+```
