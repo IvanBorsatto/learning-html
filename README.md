@@ -110,3 +110,11 @@ Usado para comentar no meio do código sem interferir no código.
   <p>O elemento quote — <code>&lt;q&gt;</code> — é <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">usado para citações curtas que não precisam de parágrafos ou quebras de linha.</q> -- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
   <cite>MDN q page</cite></a>.</p>
   ```
+
+### ABREVIAÇÕES
+
+- **abbr**
+
+```bash
+**<p>Usamos <abbr title="Hypertext Markup Language">HTML</abbr>  para estruturar nossos documentos da web.</p>**
+```
