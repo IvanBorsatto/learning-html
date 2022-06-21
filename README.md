@@ -130,3 +130,22 @@ A tag usada para apenas colocar detalhes de contato é a tag _<address></address
     </p>
 </address
 ```
+
+### LISTA DE DESCRIÇÃO
+
+- **dl** — tag para lista de descrições (_<dl></dl>_);
+- **dt** — tag para o termo da descrição (_<dt></dt>_);
+- **dd** — tag para descrição (_<dd></dd>_).
+
+```bash
+<dl>
+    <dt>Hypertext</dt>
+    <dd>É um hiper texto com possibilidades...</dd>
+
+    <dt>Markup</dt>
+    <dd>Marcação do texto</dd>
+
+    <dt>Languague</dt>
+    <dd>Linguagem com sua semântica e sintaxe....</dd>
+</dl>
+```
