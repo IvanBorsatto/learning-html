@@ -8,3 +8,10 @@ Usado para comentar no meio do código sem interferir no código.
 ```bash
 <!- - comentário - ->
 ```
+
+### TAGS
+
+- Abertura e fechamento
+         < >         </ >
+
+###
