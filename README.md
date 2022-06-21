@@ -197,21 +197,16 @@ Por fim temos o atributo **_target=""_**, que irá dizer qual o alvo do nosso di
 <a href="outros/conteudo-a-element.html">arquivo na pasta outros, que está na pasta anterior</a>
 ```
 
-### TABELAS (<table>)
+### TABELAS
 
-Prós
-
-- Visualização de dados via linhas e colunas.
-- Boa acessibilidade para leitura dos dados
-
-Contras
-
-- Pouco flexível
-- Precisa de estilização para melhor visualização
-
-Não usar
-
-- Para criar seu layout
+- Prós
+  - Visualização de dados via linhas e colunas.
+  - Boa acessibilidade para leitura dos dados
+- Contras
+  - Pouco flexível
+  - Precisa de estilização para melhor visualização
+- Não usar
+  - Para criar seu layout
 
 Para fazer uma tabela básica, apenas precisaremos da **_tag `<table></table>`_**, dentro dela iremos usar a tag `<tr></tr>`(table row) para criar uma linha na tabela, e dentro dela usaremos a tag `<th></th>` para o cabeçalho.
 
