@@ -336,6 +336,7 @@ Estaremos usando o atributo **_scope,_** que serve permitir que essa acessibilid
 - FAVICON
   Favicon é uma abreviação para _"favorite icon"_, refere-se aos ícones dos favoritos a alguns anos atrás, mas nos dias de hoje acabou ficando este termo, antigamente ele era por 16 pixeis, porém com o avanço da tecnologia isso mudou.
   Para colocarmos o ícone usaremos a tag `<link>` com o atributo **_rel="icon"_**, que seria para representar relação, no caso a tag **_link_** vai conter um ícone, depois o **_href_** para mostrar onde está o ícone
+
   ```bash
   <!--
       <link> para ícones personalizados
@@ -366,3 +367,50 @@ Estaremos usando o atributo **_scope,_** que serve permitir que essa acessibilid
 
   <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
   ```
+
+### SEO (Search Engine Optimization)
+
+- Veremos agora das metas que são importantes para SEO(Search Engine Optimization ou motores de busca, como o google).
+
+```bash
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+- Esses já vimos anteriormente.
+
+```bash
+<meta name="author" content="Mayk Brito">
+```
+
+- Temos também o de autor, para definir o autor da página, para possuirmos propriedade sobre a página.
+
+```bash
+<meta name="description" content="Um website para iniciantes em programação">
+```
+
+- Este meta é usado para descrição de sites, caso você não tenha esse meta, o navegador irá procurar qualquer texto seu, mas muito melhor escolher o que você quer que apareça.
+
+```bash
+<meta name="robots" content="index, follow">
+```
+
+- Esse meta diz para o robô do google o que queremos que ele faça, ele é responsável por colocar os resultados da busca , por exemplo. É possível dizer ao robô seguir links na página, através do `follow`, ou o contrário com o `nofollow` , ou "indexar" a página, através do index, ou no index.
+
+- Existem metadados personalizados por empresas de redes sociais, como Facebook, que criou o Open Graph, que é um tipo de metadado se quisermos colocar um tipo de conteúdo especial, caso queiramos compartilhar o link da nossa página no Facebook.
+
+```bash
+ <head>
+    <!-- Open Graph: facebook -->
+    <meta property="og:image" content="https://cdn-images-1.medium.com/max/92/1*TkXVfLTwsHdwpUEjGzdi9w@2x.jpeg">
+    <meta property="og:description" content="Aqui vem um texto para ser mostrado ao compartilhar no facebook">
+    <meta property="og:title" content="Um site da Rocketseat">
+
+    <!-- twitter -->
+    <meta name="twitter:title" content="Rocketseat">
+</head>
+```
+
+São exemplos de metadados, que o Facebook procura na hora que compartilhamos a nossa página, como imagens, descrição, texto e outros.
+
+O Twitter usa o atributo `name` diferente do Facebook que resolveu usar o `property` .
