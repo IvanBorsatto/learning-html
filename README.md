@@ -196,3 +196,118 @@ Por fim temos o atributo **_target=""_**, que irá dizer qual o alvo do nosso di
 <br>
 <a href="outros/conteudo-a-element.html">arquivo na pasta outros, que está na pasta anterior</a>
 ```
+
+### TABELAS (<table>)
+
+- Prós
+  - Visualização de dados via linhas e colunas.
+  - Boa acessibilidade para leitura dos dados
+- Contras
+  - Pouco flexível
+  - Precisa de estilização para melhor visualização
+- Não usar
+  - Para criar seu layout
+
+Para fazer uma tabela básica, apenas precisaremos da **_tag `<table></table>`_**, dentro dela iremos usar a tag `<tr></tr>`(table row) para criar uma linha na tabela, e dentro dela usaremos a tag `<th></th>` para o cabeçalho.
+
+Depois faremos o `tr` novamente, só que agora não sendo o cabeçalho, e sim o `td`.
+
+Ficará da seguinte foram:
+
+```bash
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+    <tr>
+        <td>Mayk</td>
+        <td>35</td>
+    </tr>
+    <tr>
+        <td>Diego</td>
+        <td>25</td>
+    </tr>
+</table>
+```
+
+Agora vamos dar uma melhor organizada na nossa tabela.
+
+Colocaremos o nosso cabeçalho, na tag **_<thead></thead>_** e o nosso corpo no **_<tbody></tbody>_** e criaremos o rodapé usando **_<tfoot></tfoot>_** colocando os dados total.
+
+Por fim poderemos colocar a tag **_<caption></caption>_** para descrever sobre o que a nossa tabela é, ficando mais ou menos assim:
+
+```bash
+<table>
+
+    <caption>Pessoas por idade</caption>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mayk</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>2 Pessoas</td>
+        </tr>
+    </tfoot>
+
+</table>
+```
+
+Estaremos usando o atributo **_scope,_** que serve permitir que essa acessibilidade saiba que o escopo do cabeçalho é relacionado com, o agrupamento, ou a coluna, ou a linha, o atributo é escrito `scope=""`.
+
+```bash
+<table>
+    <caption>Produzidos x Vendidos por Loja</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: red">
+        <col span="2" style="background-color: blue;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Afonso Pena</th>
+            <th colspan="2" scope="colgroup">Antônia Pereira</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+```
