@@ -57,3 +57,30 @@ Usado para comentar no meio do código sem interferir no código.
 
 </html>
 ```
+
+### LISTAS
+
+- Ordenada
+  Segue uma ordem numérica: 1,2,3,4,5,6,7,8,9…
+  ```bash
+  <ol>
+  	<li>3 folhas de couve</li>
+  	<li>1 laranja</li>
+  	<li>1 pedacinho de gengibre</li>
+  	<li>300ml de água</li>
+  	<li>Adoçante a gosto</li>
+  	<li>Gelo a gosto</li>
+  </ol>
+  ```
+- Não Ordenada
+  Não segue uma ordem numérica, segue como lista.
+  ```bash
+  <ul>
+  	<li>3 folhas de couve</li>
+  	<li>1 laranja</li>
+  	<li>1 pedacinho de gengibre</li>
+  	<li>300ml de água</li>
+  	<li>Adoçante a gosto</li>
+  	<li>Gelo a gosto</li>
+  </ul>
+  ```
