@@ -149,3 +149,16 @@ A tag usada para apenas colocar detalhes de contato é a tag _<address></address
     <dd>Linguagem com sua semântica e sintaxe....</dd>
 </dl>
 ```
+
+### REPRESENTAÇÃO DE CÓDIGO
+
+- **code** — muda a cor do conteúdo para representar código (_<code></code>_).
+- **pre** — tag para criar um bloco de código, mantém os espaços em branco (_<pre></pre>_).
+
+```bash
+<pre>
+    <code>
+        &lt;
+    </code>
+</pre>
+```
