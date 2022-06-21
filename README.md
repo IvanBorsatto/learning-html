@@ -27,3 +27,33 @@ Usado para comentar no meio do código sem interferir no código.
 - **Style**: posso estilizar minha página dentro do html sem precisar criar um outro arquivo chamado CSS;
 - **Tabindex**: Usado para enumerar as tags para quando o usuário não conseguir/tiver uma mouse, ele vai poder navegar através da teclas tab do teclado;
 - **Title**: Usado para definir um título para a tag;
+
+### ANATÔMIA DO DOCUMENTO
+
+```bash
+<!DOCTYPE *html*>
+
+<html *lang*="pt">
+
+	<head>
+
+		<!-- configurações para o documento (Cabeça)-->
+
+		<meta *charset*="UTF-8" />
+
+		<meta *http-equiv*="X-UA-Compatible" *content*="IE=edge" />
+
+		<meta *name*="viewport" *content*="width=device-width, initial-scale=1.0" />
+
+		<title>Document</title>
+
+	</head>
+
+	<body>
+
+		<!--É o que o usuário da página ira ver/receber (Corpo)-->
+
+	</body>
+
+</html>
+```
