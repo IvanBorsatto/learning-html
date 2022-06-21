@@ -311,3 +311,58 @@ Estaremos usando o atributo **_scope,_** que serve permitir que essa acessibilid
     </tbody>
 </table>
 ```
+
+### CABEÇALHO
+
+- `<head></head>`
+  É a parte não visível pelo navegador, onde se faz configurações, contém informações como o título, links para o CSS, para o favicon.
+
+- `<meta>`
+   Ela serve para definir metadados, como codificação de caracteres especiais e portabilidade para dispositivos mobiles.
+
+      Meta normalmente virá com o atributo ***name*** para especificar a ***meta***, ***content*** para conteúdo, mas há também como o atributo ***charset***, para caracteres especiais.
+
+      ```bash
+      <head>
+          <!-- codificação de caracteres especiais -->
+          <meta charset="UTF-8">
+
+          <!-- portabilidade para dispositivos mobiles -->
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      </head>
+      ```
+
+- FAVICON
+  Favicon é uma abreviação para _"favorite icon"_, refere-se aos ícones dos favoritos a alguns anos atrás, mas nos dias de hoje acabou ficando este termo, antigamente ele era por 16 pixeis, porém com o avanço da tecnologia isso mudou.
+  Para colocarmos o ícone usaremos a tag `<link>` com o atributo **_rel="icon"_**, que seria para representar relação, no caso a tag **_link_** vai conter um ícone, depois o **_href_** para mostrar onde está o ícone
+  ```bash
+  <!--
+      <link> para ícones personalizados
+  -->
+
+  <!-- favicon básico -->
+  <link rel="icon" href="/icons/icon-48x48.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+  <!-- iPhone não-Retina, iPod Touch e dispositivos Android 2.1+: -->
+  <link rel="apple-touch-icon-precomposed" href="https://developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+
+  <!-- iPad de primeira e segunda geração: -->
+  <link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+  <link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+  <!-- iPhone com tela retina de alta resolução: -->
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+  <!-- iPad de terceira geração com tela retina de alta resolução: -->
+  <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+  <link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+  <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+  <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+  ```
