@@ -162,3 +162,15 @@ A tag usada para apenas colocar detalhes de contato é a tag _<address></address
     </code>
 </pre>
 ```
+
+### ELEMENTOS GENÉRIOCOS
+
+- **div** — tag usada para agrupar conteúdo (<div></div>).
+- **span** — tag usada para agrupar texto, em uma ideia mais de linha (<span></span>).
+
+```bash
+<div class="cart">
+    <span>Camiseta</span>
+    <span>r$ 99,00</span>
+</div>
+```
