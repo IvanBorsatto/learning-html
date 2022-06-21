@@ -84,3 +84,29 @@ Usado para comentar no meio do código sem interferir no código.
   	<li>Gelo a gosto</li>
   </ul>
   ```
+
+### CITAÇÕES
+
+- **blockquote** — para uma citação que você queira deixar maior, tendo uma estilização mais diferente.
+
+```bash
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+    O <strong>Elemento HTML <code>&lt;blockquote&gt;</code> </strong> (ou <em>HTML Block
+    Quotation Element</em>) indica que um texto externo foi citado.
+</blockquote>
+```
+
+- **cite** — atributo usado para citar a url.
+
+```bash
+<p>De acordo com <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+    <cite>página MDN blockquote</cite></a>:
+</p>
+```
+
+- **q** — citação curtas com aspas (_<q></q>_)
+  _<cite></cite>_ — tag usada para colocar o citar link direto no texto.
+  ```bash
+  <p>O elemento quote — <code>&lt;q&gt;</code> — é <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">usado para citações curtas que não precisam de parágrafos ou quebras de linha.</q> -- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+  <cite>MDN q page</cite></a>.</p>
+  ```
